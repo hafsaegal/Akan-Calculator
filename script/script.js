@@ -29,13 +29,13 @@ function calculateDayOfWeek(day, month, year) {
 // Function to validate the input date
 function validateDate(day, month, year) {
   if (day <= 0 || day > 31) {
-    return "Error.Please enter a valid day (1-31).";
+    return "Invalid date.Please enter a valid day (1-31).";
   }
   if (month <= 0 || month > 12) {
-    return "Error.Please enter a valid month (1-12).";
+    return "Ivalid month.Please enter a valid month (1-12).";
   }
   if (year < 1900 || year > 2025) {
-    return "Error.Please enter a valid year (1900-2025).";
+    return "Invalid year.Please enter a valid year (1900-2025).";
   }
 }
 
