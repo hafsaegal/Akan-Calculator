@@ -17,5 +17,17 @@ const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
   const year = parseInt(document.getElementById("year").value);
   const genderInput = document.querySelector('input[name="gender"]:checked');
 
+  
+
  // validate the input to ensure its correct
- 
+ function validateDate(day,month,year){
+  if(day <=0 || day >31){
+    return "Invalid date. Please enter a valid day (1-31)"
+  }
+  if (month <=0 || month >12){
+    return "invalid date.Please enter a valid month(1-12)"
+  }
+
+ }
+  
+
