@@ -57,7 +57,7 @@ document.getElementById("akan-form").addEventListener("submit", function (e) {
 
   //Get the Akan name based on the day of the week and the gender
   const akanName = gender === "Male" ? maleNames[dayOfWeek] : femaleNames[dayOfWeek];
-  console.log(gender)
+  console.log(gender);
   // // let akanName = ''
   // if (gender === "male") {
   //   // akanName = maleNames[dayOfWeek]
