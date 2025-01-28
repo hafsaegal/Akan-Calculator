@@ -1,3 +1,5 @@
+//addEventListener can carry to arguments
+
 document.getElementById("akan-form").addEventListener("submit", function (e) {
   e.preventDefault(); // this will prevent web reloading
 
@@ -22,6 +24,7 @@ document.getElementById("akan-form").addEventListener("submit", function (e) {
   ];
 
   //Taking user input (birthday & Gender)
+  //
 
   const day = parseInt(document.getElementById("day").value);
   const month = parseInt(document.getElementById("month").value);
@@ -56,7 +59,8 @@ document.getElementById("akan-form").addEventListener("submit", function (e) {
   const dayOfWeek = ((calculateDayOfWeek(day, month, year) % 7) + 7) % 7;
 
   //Get the Akan name based on the day of the week and the gender
-  const akanName = gender === "Male" ? maleNames[dayOfWeek] : femaleNames[dayOfWeek];
+  const akanName =
+    gender === "Male" ? maleNames[dayOfWeek] : femaleNames[dayOfWeek];
   console.log(gender);
   // // let akanName = ''
   // if (gender === "male") {
